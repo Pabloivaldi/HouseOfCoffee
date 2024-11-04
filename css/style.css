@@ -1,0 +1,593 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(95, 95, 94);
+}
+
+h1{color: rgb(238, 198, 19); font-size: 32px;}
+h2{color: rgb(238, 198, 19); font-size: 26px;}
+
+
+body { 
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(241, 144, 185);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: auto;
+    display:grid;
+    align-content: center;
+    grid-template-columns: 1fr 2fr 5fr;
+    grid-template-rows: 1fr;
+    padding: 0 12%;
+}
+.marca{
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+}
+
+.navbar {
+    background-color: rgb(241, 144, 185);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items:center
+}
+
+ul {
+    list-style: none; /*quita los puntos de cada item*/
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.navbar li{
+    float: left;
+    padding: 0 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: color 0.15s ease;
+}
+
+.navbar a:hover {
+    color: rgb(238, 198, 19); /* puse esto para cambiar el color cuando paso el cursos sobre los enlaces de la navbar */
+}
+
+.grid-container {
+    background-color: rgb(243, 237, 226);
+    padding-bottom: 1rem;
+}
+
+/*INICIO*/
+#inicio{
+    margin: 5% 12%;
+}
+
+.presentacion{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dedicado{
+    margin: 4rem  0;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+
+}
+.para{
+    padding: 1rem 3rem;
+    font-size: 18px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.para h2{
+    color: rgb(241, 144, 185);
+}
+
+.dedicado img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*NOVEDADES*/
+
+#novedades{
+    margin: 5% 12%;
+}
+
+.ingreso{
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: .5rem;
+}
+
+.ingreso img{
+    width: 100%;
+}
+.ingreso video{
+    width: 100%;
+}
+
+/*NOSOTROS*/
+#nosotros{
+    margin: 5% 12%;
+}
+
+#nosotros{
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
+
+    gap: .5rem;
+}
+
+.historia{
+    grid-column-start:1 ;
+    grid-column-end:3 ;
+}
+
+#nosotros img{
+    width: 100%;
+}
+
+/*PRODUCTOS*/
+#comprar{
+    margin: 5% 12%;
+}
+
+.carrito{
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    row-gap: 2rem; 
+}
+.producto {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1rem;
+    border: 2px rgb(255, 255, 255);
+    border-style: solid;
+}
+
+.producto:hover {
+    border-color: rgb(241, 144, 185); /* Cambio el color del borde al pasar el cursor */
+}
+
+.producto img{
+    width: 100%;
+}
+
+/*CONTACTO*/
+#contacto{
+    margin: 5% 12%;
+}
+
+#contacto {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: rem;
+
+}
+
+.locales{
+    background-color: black;
+    padding-left:2rem;
+}
+.mapa{
+    background-color: black;
+    padding: 0 2rem;
+}
+
+.locales p {
+    padding-left: 0 20%;
+    margin: 0;
+}
+
+.locales li{
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.locales h3{
+    color: rgb(241, 144, 185);
+}
+
+.mapa{
+    padding-top: 2rem;
+}
+
+.redes {
+    color: #f190b9;;
+    padding-top: 6rem;
+    margin: 0 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form {
+    background-image: url(../image/headerimage2.jpg);
+    align-content: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    padding: 3rem;
+    border-style: none;
+    border-radius: 10px;
+}
+
+input, select {
+    width:300px;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+  
+textarea {
+    width:300px;
+    height: 100px;
+    border-radius: 10px;
+    border-right: 1px solid;
+}
+  
+button {
+    width:150px;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(241, 144, 185);
+}
+  
+button:hover, button:focus {
+    outline: none;
+    background: rgb(238, 198, 19);
+    color: rgb(255, 255, 255);
+}
+
+/*FOOTER*/
+.footer {
+    background-color: rgb(241, 144, 185);
+    align-items: center;
+    padding: 2rem ;   
+}
+
+.footer h3{
+    color: rgb(250, 255, 253);
+    font-size: 12px;
+    margin: 0 12%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES PARA CELULAR Iphone 12 plus*/
+
+@media only screen and (max-width: 600px){
+    h1{color: rgb(238, 198, 19); font-size: 25px;}
+    h2{color: rgb(238, 198, 19); font-size: 22px;}
+
+
+    body { 
+        margin: 0;
+        width: 599px;
+    }
+
+    .header {
+        background-color: rgb(241, 144, 185);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display:grid;
+        align-content: center;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 1fr;
+        padding: 0 3rem;
+        margin: 0;
+    }
+    .marca{
+        font-size: 0;
+    }
+
+    .logo img{
+        width:120px;
+        height:120px;
+        padding-left: 1rem;
+    }
+
+    .navbar {
+        background-color: rgb(241, 144, 185);
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        align-items:center
+    }
+
+    ul {
+        list-style: none; /*quita los puntos de cada item*/
+        display: inline;
+        flex-wrap: wrap;
+    }
+
+    .navbar li{
+        float: left;
+        padding: 0 1.5rem;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        font-family: roboto;
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        transition: color 0.15s ease;
+    }
+
+    .navbar a:hover {
+        color: rgb(238, 198, 19); /* puse esto para cambiar el color cuando paso el cursos sobre los enlaces de la navbar */
+    }
+
+    .grid-container {
+        background-color: rgb(243, 237, 226);
+        padding-bottom: 1rem;
+    }
+
+    /*INICIO*/
+    #inicio{
+        margin: 3rem 5rem;
+    }
+
+    .presentacion{
+        font-weight: 600;
+        font-size: 14px;
+        margin: 0  2rem;
+        text-align: center;
+    }
+
+    .dedicado{
+        margin: rem  0;
+        align-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: .5rem;
+
+    }
+    .para{
+        padding: .5rem 1rem;
+        font-size: 12px;
+        text-align: center;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    .para h2{
+        color: rgb(241, 144, 185);
+    }
+
+    .dedicado img{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    /*NOVEDADES*/
+
+    #novedades{
+        margin: 5% 12%;
+    }
+
+    .ingreso{
+        align-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: .5rem;
+    }
+
+    .ingreso img{
+        width: 100%;
+    }
+    .ingreso video{
+        width: 100%;
+    }
+
+    /*NOSOTROS*/
+    #nosotros{
+        margin: 3rem 5rem;
+    }
+
+    #nosotros{
+        align-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: .5rem;
+    }
+    .historia{
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        padding-bottom: 1rem;
+    }
+
+    #nosotros img{
+        width: 100%;
+    }
+
+    /*PRODUCTOS*/
+    #comprar{
+        margin: 3rem 5rem;
+    }
+
+    .carrito{
+        align-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        row-gap: 2rem; 
+    }
+    .producto {
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        padding-bottom: 1rem;
+        border: 2px rgb(255, 255, 255);
+        border-style: solid;
+    }
+
+    .producto:hover {
+        border-color: rgb(241, 144, 185); /* Cambio el color del borde al pasar el cursor */
+    }
+
+    .producto img{
+        width: 100%;
+    }
+
+    /*CONTACTO*/
+    #contacto{
+        margin: 3rem 5rem;
+    }
+
+    #contacto {
+        align-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .8fr .5fr 1fr;
+        gap: 0rem;
+    }
+
+    .locales{
+        background-color: black;
+        padding:1rem 1rem 0 1rem;
+        margin:0;
+        text-align: center;
+    }
+    .mapa{
+        background-color: black;
+        padding: 2rem 0rem;
+        padding-left: 6rem;
+    }
+    .mapa iframe{
+        width: 250px;
+        height: 250px;
+    }
+ 
+    .locales p {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .locales li{
+        list-style: none;
+        margin-top: 0rem;
+    }
+
+    .locales h3{
+        color: rgb(241, 144, 185);
+    }
+
+    .redes {
+        color: #f190b9;;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin: 0 1rem;
+        gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    form {
+        margin: 2rem 0;
+        background-image: url(../image/headerimage2.jpg);
+        align-content: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        padding: 3rem;
+        border-style: none;
+        border-radius: 10px;
+    }
+
+    input, select {
+        width:100%;
+        height: 35px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    textarea {
+        width:100%;
+        height: 100px;
+        border-radius: 10px;
+        border-right: 1px solid;
+    }
+    
+    button {
+        width:49%;
+        height: 35px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        margin-top: 1rem;
+        box-sizing: border-box;
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: rgb(241, 144, 185);
+    }
+    
+    button:hover, button:focus {
+        outline: none;
+        background: rgb(238, 198, 19);
+        color: rgb(255, 255, 255);
+    }
+
+    /*FOOTER*/
+    .footer {
+        background-color: rgb(241, 144, 185);
+        text-align: center;
+        padding: 0;   
+    }
+
+    .footer h3{
+        color: rgb(250, 255, 253);
+        font-size: 12px;
+        padding: .5rem ;
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
