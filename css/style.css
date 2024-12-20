@@ -127,16 +127,13 @@ ul {
 }
 
 /*NOSOTROS*/
-#nosotros{
-    margin: 5% 12%;
-}
 
 #nosotros{
+    margin: 5% 12%;
     align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .5fr 1fr;
-
     gap: .5rem;
 }
 
@@ -154,7 +151,7 @@ ul {
     margin: 5% 12%;
 }
 
-.carrito{
+#carrito{
     align-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -170,6 +167,10 @@ ul {
     border-style: solid;
 }
 
+.producto p {
+    font-size: 12px;
+}
+
 .producto:hover {
     border-color: rgb(241, 144, 185); /* Cambio el color del borde al pasar el cursor */
 }
@@ -177,6 +178,101 @@ ul {
 .producto img{
     width: 100%;
 }
+
+.botonAgregar {
+    width:150px;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(241, 144, 185);
+}
+  
+.botonAgregar:hover, button:focus {
+    outline: none;
+    background: rgb(238, 198, 19);
+    color: rgb(255, 255, 255);
+}
+
+/*PEDIDO*/
+#pedido{
+    margin: 5% 12%;
+    padding: 16px 48px;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr .2fr .5fr .5fr;
+    grid-template-rows: .5fr 1fr .5fr .5fr .5fr .2fr;
+    gap: .5rem;
+}
+
+#pedido h2{
+    grid-area:  1 / 1 / span 1 / span 3;
+    color:rgb(241, 144, 185);
+    margin-top: 0;
+}
+
+#pedido img{
+    width: 25%;
+    padding-left: 35%;
+    grid-area: 2 / 4 / span 1 / span 2;
+    
+}
+#pedido ul{
+    grid-area: 2 / 1 / span 4 / span 2;
+    list-style: disc;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 16px 48px;
+    border-color: rgb(241, 144, 185);
+    border-style:solid;
+    border-radius: 10px;
+}
+#pedido p{
+    grid-area: 3 /  4/ span 1 / span 2;
+    padding-left: 20%;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(238, 198, 19);
+    margin-bottom: 0%;
+}
+
+#pedido #mensajePagarPedido{
+    grid-area: 4 / 4 / span 1 / span 2 ;
+    margin-top: 0;
+    font-size: 13px;
+    color: #f190b9;
+}
+
+#btnBorrar {
+    grid-area: 5 / 5 / span 1 / span 1;
+}
+#btnPagar {
+    grid-area: 5 / 4 / span 1 / span 1;
+}
+
+#pedido input {
+    width:150px;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(241, 144, 185);
+}
+  
+#pedido input:hover, button:focus {
+    outline: none;
+    background: rgb(238, 198, 19);
+    color: rgb(255, 255, 255);
+}
+
 
 /*CONTACTO*/
 #contacto{
@@ -380,13 +476,15 @@ button:hover, button:focus {
     }
 
     .dedicado{
-        margin: rem  0;
         align-content: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: .5rem;
 
+    }
+    .dedicado h2{
+        margin-top: 0.3rem; 
     }
     .para{
         padding: .5rem 1rem;
@@ -453,7 +551,7 @@ button:hover, button:focus {
         margin: 3rem 5rem;
     }
 
-    .carrito{
+    #carrito{
         align-content: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -476,6 +574,68 @@ button:hover, button:focus {
     .producto img{
         width: 100%;
     }
+    
+/*PEDIDO*/
+#pedido{
+    margin: 3rem 5rem;
+    padding: 8px 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr .5fr .5fr .5fr .5fr;
+    gap: .3rem;
+}
+
+#pedido h2{
+    grid-area:  1 / 1 / span 1 / span 5;
+    color:rgb(241, 144, 185);
+    margin-top: 0;
+}
+
+#pedido img{
+    width: 50%;
+    padding-left: 25%;
+}
+
+#pedido ul{
+    grid-area: 2 / 1 / span 5 / span 3;
+    list-style: disc;
+    font-size: 18px;
+    padding: 10px 32px;
+    border-radius: 10px;
+}
+#pedido p{
+    grid-area: 3 /4  / span 1 / span 2;
+    padding-left: 15%;
+    font-size: 19px;
+    font-weight: 700;
+    color: rgb(238, 198, 19);
+    margin-bottom: 0%;
+}
+
+#pedido #mensajePagarPedido{
+    grid-area: 4/ 4 / span 1 / span 2 ;
+    margin-top: 0;
+    font-size: 12px;
+    color: #f190b9;
+}
+#pedido input {
+    width:140px;
+    height: 35px;
+    margin-left: 5%;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(241, 144, 185);
+}
+
+#btnBorrar {
+    grid-area: 6 / 4  / span 1  / span 2;
+}
+#btnPagar {
+    grid-area: 5 / 4 / span 1 / span 2;
+}
 
     /*CONTACTO*/
     #contacto{
