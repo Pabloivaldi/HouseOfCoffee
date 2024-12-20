@@ -1,0 +1,112 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(95, 95, 94);
+}
+
+h2{color: rgb(238, 198, 19); font-size: 26px;}
+
+
+body { 
+    margin: 0; 
+    background-color: rgb(243, 237, 226);
+}
+
+.header {
+    background-color: rgb(241, 144, 185);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: auto;
+    align-content: center;
+}
+
+.logo img{
+    width:150px;
+    height:150px;
+    padding: .5% 45%;
+}
+
+
+.formadepago { 
+    margin: 5% 35%;
+    padding-bottom: 1%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr .5fr 1fr;
+    gap: 1.6rem;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    font-weight: 600;
+    justify-items: center;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: rgb(241, 144, 185);
+    align-items: center;
+    padding: 2rem ;   
+}
+
+.footer h3{
+    color: rgb(250, 255, 253);
+    font-size: 12px;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*MEDIA QUERIES PARA CELULAR Iphone 12 plus*/
+
+@media only screen and (max-width: 600px){
+
+    .logo img{
+        width:100px;
+        height:100px;
+        padding: 1% 40%;
+    }
+    .formadepago { 
+        margin: 20% 15% 20% 15% ;
+        padding-bottom: 2%;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr .5fr 1fr;
+        gap: 1.0rem;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: rgb(255, 255, 255);
+        font-weight: 600;
+        justify-items: center;
+    }
+    .formadepago #mpago {
+        width: 50%;
+    }
+    .formadepago #modo {
+        width: 50%;
+    }
+    .formadepago #tcredito {
+        width: 70%;
+    }
+
+    /*FOOTER*/
+    .footer {
+        background-color: rgb(241, 144, 185);
+        text-align: center;
+        padding: 0;   
+    }
+
+    .footer h3{
+        color: rgb(250, 255, 253);
+        font-size: 12px;
+        padding: 1rem ;
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+
