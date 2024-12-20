@@ -78,80 +78,17 @@
 
             <section id="comprar">
                 <h2>Llevate todo!</h2>
-                <div class="carrito">
-                    <div class="producto">
-                        <img src="image/cafexpreso1.jpg" alt="cafetera1">
-                        <h4>Máquina Expresso Saeco</h4>
-                        <p>Cód. 9XXF45-BM</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/cafexpreso2.jpg" alt="cafetera2">
-                        <h4>Máquina Expresso Saeco</h4>
-                        <p>Cód. 6y6F40-BX</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/cafexpreso3.jpg" alt="cafetera3">
-                        <h4>Cód. 958CDD5-BA</h4>
-                        <p>Cód. MAGIC32-B2</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/cafetera.jpg" alt="cafetera4">
-                        <h4>Cafetera filtro cristal</h4>
-                        <p>Cód. TTYcr450cc</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/cafe4.jpg" alt="cafe4">
-                        <h4>Café BONKA exta fuerte</h4>
-                        <p>Cód. BonkaEF500</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/capsulas1.jpg" alt="capsulas1">
-                        <h4>Café Cabrales Cap. I6</h4>
-                        <p>10 cápsulas x Liviano</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/capsulas2.jpg" alt="capsulas2">
-                        <h4>Café Cabrales Cap. I8</h4>
-                        <p>10 cápsulas x Intenso</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/capsulas3.jpg" alt="capsulas3">
-                        <h4>Café Cabrales Cap. I12</h4>
-                        <p>10 cápsulas x Fuerte</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/acc1.jpg" alt="accesorio1">
-                        <h4>Distribuidor</h4>
-                        <p>Cód. HR399-LP</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/acc2.jpg" alt="accesorio2">
-                        <h4>Molinillo Manual Aluminio</h4>
-                        <p>Cód. CD455-LL</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/acc3.jpg" alt="accesorio3">
-                        <h4>Tamper mediano</h4>
-                        <p>Cód. TX33</p>
-                        <button>Comprar</button>
-                    </div>
-                    <div class="producto">
-                        <img src="image/desc1.jpg" alt="descartables1">
-                        <h4>Vaso descartable 330cc</h4>
-                        <p>Cód. PC330</p>
-                        <button>Comprar</button>
-                    </div>
-                </div>
+                <div id="carrito"></div>
+            </section>
+
+            <section id="pedido">
+                <h2>Mi pedido</h2>
+                <ul></ul>
+                <img src="image/carro.jpg" alt="carro">
+                <p>Total a pagar: $0</p>
+                <p id="mensajePagarPedido"></p>
+                <input id="btnBorrar" type="button" value="Borrar">
+                <input id="btnPagar" type="button" value="Pagar"> 
             </section>
 
             <section id="contacto">               
@@ -206,4 +143,5 @@
             <h3>House of Coffee - Casa del Café S.R.L.  *  Av. Montes de Oca 537 Ciudad Autónoma de Buenos Aires  *  +54 0800-555CAFE (2233)  -  Todos los derechos reservados (Copyright 2024)</h3>
         </div>
     </div>
+    <script src="js/scriptscarrito.js"></script>
 </body>
